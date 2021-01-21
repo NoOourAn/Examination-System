@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="RegLogin.css">
+<title>Registeration Form</title>
+</head>
+<body>
+
+<form  name="regform">
+  <div class="maindiv">
+  <div class="container">
+    <h1>Register</h1>
+    <p>Please fill in this form to create an account.</p>
+    <hr>
+
+    <label for="username"><b>UserName</b></label>
+    <span id="name"> required </span>
+    <input type="text" placeholder="Enter your name" name="username" id="username" >
+                
+    <label for="email"><b>Email</b></label>
+    <span id="email">please enter valid email</span>
+    <input type="text" placeholder="Enter Email" name="email" id="email" >
+    
+
+    <label for="psw"><b>Password</b></label>
+    <span id="password">at least 8 letters</span>
+    <input type="password" placeholder="Enter Password" name="psw" id="psw">
+
+    <label for="psw-repeat"><b>Repeat Password</b></label>
+    <span id="password2">the two passwords aren't matching</span>
+    <input type="password" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat">
+    <hr>
+
+    <button type="submit" class="registerbtn">Register</button>
+  </div>
+  
+
+  <div class="imagediv">
+    <img src="exams.png" width="654px" height="718px">
+  </div>
+</div>
+
+
+</form>
+
+<script src="Cookies.js"></script>
+<script src="FormsValidations.js"></script>
+<script src="Reg.js"></script>
+</body>
+</html>

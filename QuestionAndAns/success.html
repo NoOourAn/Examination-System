@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Success</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+       
+
+
+        <div id="success">
+        </div>
+
+        <script src="../Cookies.js"></script>
+        <script>
+ 
+            var queryString = decodeURIComponent(window.location.search);
+            var queries = queryString.split("=");
+
+            var success = document.getElementById("success");
+
+            success.innerHTML =`
+            <p>Congrats dear ${getCookie("username")}<br>
+                Your Grade is ${queries[1]}</p>
+
+            `; 
+             
+            </script> 
+    </body>
+</html>
